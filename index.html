@@ -19,8 +19,7 @@
     <meta property="og:url" content="https://isabel.contact">
     <meta property="twitter:card" content="summary_large_image">
     <meta name="theme-color" content="#1e1e2e">
-    <script defer src="js/js.js"></script>
-    <link href="css/style.css" rel="stylesheet" type="text/css" preload>
+    <link href="css/tailwind.css" rel="stylesheet" type="text/css" preload>
     <link rel="manifest" href="manifest.json">
     <link rel="apple-touch-icon" href="assets/icons/apple-icon-180.png">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -88,7 +87,178 @@
 </head>
 
 <body>
+    <header
+        class="flex flex-col md:flex-row md:justify-between md:items-center md:px-6 py-16 md:mb-12 gap-y-10 md:gap-y-0">
+        <a href="/" class="flex gap-x-3 items-center md:px-3 py-2 my-1 transition rounded-sm"><img
+                src="/assets/avatar3.webp" class="rounded-full" width="32" height="32" alt="Profile picture of Ryan"
+                style="background-image: none;">
+            <span class="font-display tracking-tight text-3xl font-black">Isabel</span></a>
+        <div class="flex flex-col gap-y-2 md:flex-row md:items-center md:gap-x-4 md:gap-y-0">
+            <a href="#projects"
+                class="flex flex-row gap-x-3 items-center text-lg font-display md:px-3 py-1 rounded-sm font-semibold transition link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    class="block h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                </svg> <span>Projects</span> </a>
+            <a href="/uses"
+                class="flex flex-row gap-x-3 items-center text-lg font-display md:px-3 py-1 rounded-sm font-semibold transition link">
+                <svg class="block w-5 h-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"></path>
+                </svg> <span>Uses</span> </a>
+            </a><a href="https://isabel.contact"
+                class="flex flex-row gap-x-3 items-center text-lg font-display md:px-3 py-1 rounded-sm font-semibold transition link">
+                <svg class="block w-5 h-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path d="M5.52 19c.64-2.2 1.84-3 3.22-3h6.52c1.38 0 2.58.8 3.22 3" />
+                    <circle cx="12" cy="10" r="3" />
+                    <circle cx="12" cy="12" r="10" />
+                </svg> <span>Contact Me</span> </a>
 
+            <button type="button" id="theme-toggle" aria-label="Change theme"
+                class="fixed bottom-0 right-0 m-2 z-[9999] rounded px-3 py-2 text-fg-brighter bg-surface/70 hover:bg-surface-hover/70 backdrop-blur-lg"><svg
+                    class="block h-4 w-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="13.5" cy="6.5" r=".5"></circle>
+                    <circle cx="17.5" cy="10.5" r=".5"></circle>
+                    <circle cx="8.5" cy="7.5" r=".5"></circle>
+                    <circle cx="6.5" cy="12.5" r=".5"></circle>
+                    <path
+                        d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z">
+                    </path>
+                </svg> <span id="theme-toggle-words">Theme Swap</span></button>
+    </header>
+
+    <main class="flex flex-col w-full max-w-[80ch] mx-auto">
+        <article class="prose enhanced-prose">
+            <h1>Haiii, I'm Isabel</h1>
+            <p class="subtitle">I am a 6th form student with a passion for computer science</p>
+
+            <p>In my free time I work on <a href="https://github.com/catppuccin/youtube" target="_blank">Catppuccin
+                    YouTube</a>
+                and also <a href="https://github.com/catppuccin/freshrss" target="_blank">Catppuccin FreshRSS</a>.
+            </p>
+
+            <h2>Projects</h2>
+            <div id="projects" class="not-prose flex flex-col">
+                <div class="projects-grid">
+                    <a class="flex flex-col justify-between p-6 rounded-lg transition-all bg-surface hover:bg-surface-hover shadow-md shadow-surface/20 md:col-span-2"
+                        href="https://github.com/isabelroses/userstyles" target="_blank">
+                        <div class="flex flex-col gap-y-2">
+                            <h3 class="font-bold font-display text-xl">Userstyles</h3>
+                            <p class="text-fg-dimmed">A collection of all the user styles that I use</p>
+                        </div>
+                        <svg class="block w-4 h-4 mt-4 self-end" xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                    </a>
+                    <a class="flex flex-col justify-between p-6 rounded-lg transition-all bg-surface hover:bg-surface-hover shadow-md shadow-surface/20"
+                        href="https://github.com/catppuccin/youtube" target="_blank">
+                        <div class="flex flex-col gap-y-2">
+                            <h3 class="font-bold font-display text-xl">Catppuccin YouTube</h3>
+                            <p class="text-fg-dimmed">A smooth pastel theme for Yotube</p>
+                        </div>
+                        <svg class="block w-4 h-4 mt-4 self-end" xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                    </a>
+                    <a class="flex flex-col justify-between p-6 rounded-lg transition-all bg-surface hover:bg-surface-hover shadow-md shadow-surface/20"
+                        href="https://github.com/catppuccin/freshrss" target="_blank">
+                        <div class="flex flex-col gap-y-2">
+                            <h3 class="font-bold font-display text-xl">Catppuccin FreshRSS</h3>
+                            <p class="text-fg-dimmed">A smooth pastel theme for FreshRSS</p>
+                        </div>
+                        <svg class="block w-4 h-4 mt-4 self-end" xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                    </a>
+                    <a class="flex flex-col justify-between p-6 rounded-lg transition-all bg-surface hover:bg-surface-hover shadow-md shadow-surface/20"
+                        href="" target="_blank">
+                        <div class="flex flex-col gap-y-2">
+                            <h3 class="font-bold font-display text-xl">isabelroses.com</h3>
+                            <p class="text-fg-dimmed">The source code for this website</p>
+                        </div>
+                        <svg class="block w-4 h-4 mt-4 self-end" xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                    </a>
+                    <a class="flex flex-col justify-between p-6 rounded-lg transition-all bg-surface hover:bg-surface-hover shadow-md shadow-surface/20"
+                        href="https://github.com/isabelroses/isabel.contact/" target="_blank">
+                        <div class="flex flex-col gap-y-2">
+                            <h3 class="font-bold font-display text-xl">isabel.contact</h3>
+                            <p class="text-fg-dimmed">The source code to my contacts websites</p>
+                        </div>
+                        <svg class="block w-4 h-4 mt-4 self-end" xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <script>
+        document.getElementById('theme-toggle').addEventListener('click', function () {
+            if (document.body.classList.contains('theme-ctp-mocha')) {
+                document.getElementById('theme-toggle-words').innerHTML = 'Catppuccin Macchiato';
+                document.body.classList.remove('theme-ctp-mocha');
+                document.body.classList.add('theme-ctp-macchiato');
+                localStorage.setItem('theme', 'theme-ctp-macchiato');
+            } else if (document.body.classList.contains('theme-ctp-macchiato')) {
+                document.getElementById('theme-toggle-words').innerHTML = 'Catppuccin Frappe';
+                document.body.classList.remove('theme-ctp-macchiato');
+                document.body.classList.add('theme-ctp-frappe');
+                localStorage.setItem('theme', 'theme-ctp-frappe');
+            } else if (document.body.classList.contains('theme-ctp-frappe')) {
+                document.getElementById('theme-toggle-words').innerHTML = 'Catppuccin Latte';
+                document.body.classList.remove('theme-ctp-frappe');
+                document.body.classList.add('theme-ctp-latte');
+                localStorage.setItem('theme', 'theme-ctp-latte');
+            } else {
+                document.getElementById('theme-toggle-words').innerHTML = 'Catppuccin Mocha';
+                document.body.classList.remove('theme-ctp-latte');
+                document.body.classList.add('theme-ctp-mocha');
+                localStorage.setItem('theme', 'theme-ctp-mocha');
+            }
+        });
+        addEventListener("load", (event) => {
+            var theme = localStorage.getItem('theme');
+            if (theme != null) {
+                document.body.classList.add(theme);
+                if (theme == "theme-ctp-mocha") {
+                    document.getElementById('theme-toggle-words').innerHTML = 'Catppuccin Mocha';
+                } else if (theme == "theme-ctp-macchiato") {
+                    document.getElementById('theme-toggle-words').innerHTML = 'Catppuccin Macchiato';
+                } else if (theme == "theme-ctp-frappe") {
+                    document.getElementById('theme-toggle-words').innerHTML = 'Catppuccin Frappe';
+                } else {
+                    document.getElementById('theme-toggle-words').innerHTML = 'Catppuccin Latte';
+                }
+            }
+        });
+    </script>
 </body>
 
 </html>
