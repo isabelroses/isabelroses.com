@@ -243,7 +243,7 @@
                 localStorage.setItem('theme', 'theme-ctp-mocha');
             }
         });
-        addEventListener("load", (event) => {
+        window.addEventListener("load", (event) => {
             var theme = localStorage.getItem('theme');
             if (theme != null) {
                 document.body.classList.add(theme);
@@ -256,6 +256,9 @@
                 } else {
                     document.getElementById('theme-toggle-words').innerHTML = 'Catppuccin Latte';
                 }
+            }
+            if ("serviceWorker" in navigator) {
+                navigator.serviceWorker.register("sw.js");
             }
         });
     </script>
