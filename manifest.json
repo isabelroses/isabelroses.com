@@ -1,9 +1,9 @@
 {
-    "name": "Contact Isabel",
-    "short_name": "Isabel's info",
+    "name": "Isabel Roses",
+    "short_name": "Isabel's site",
     "start_url": "/",
     "scope": ".",
-    "description": "How to Contact Isabel Roses",
+    "description": "Isabel Roses' Website",
     "icons": [
         {
             "src": "assets/icons/manifest-icon-192.maskable.png",
