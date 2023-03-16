@@ -95,14 +95,14 @@
             <span class="font-display tracking-tight text-3xl font-black">Isabel</span></a>
         <div class="flex flex-col gap-y-2 md:flex-row md:items-center md:gap-x-4 md:gap-y-0">
             <a href="projects"
-                class="flex flex-row gap-x-3 items-center text-lg font-display md:px-3 py-1 rounded-sm font-semibold transition link">
+                class="flex flex-row gap-x-3 items-center text-lg font-display md:px-3 py-1 rounded-sm font-semibold transition link text-accent">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     class="block h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                     stroke-linejoin="round">
                     <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
                 </svg> <span>Projects</span> </a>
             <a href="/uses"
-                class="flex flex-row gap-x-3 items-center text-lg font-display md:px-3 py-1 rounded-sm font-semibold transition link text-accent">
+                class="flex flex-row gap-x-3 items-center text-lg font-display md:px-3 py-1 rounded-sm font-semibold transition link">
                 <svg class="block w-5 h-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"></path>
@@ -133,132 +133,89 @@
 
     <main class="flex flex-col w-full max-w-[80ch] mx-auto">
         <article class="prose enhanced-prose">
-            <h1>Uses</h1>
+            <h1>Projects</h1>
+            <p class="subtitle">This is a small collection of some of the projects I am working on</p>
 
-            <p class="subtitle">All sorts of things that I use on my computer (and occasionally phone), services I use
-                for
-                my
-                daily life and web development, etc.</p>
-
-            <p>Feel free to make any recommendations to me through social media!</p>
-
-            <h2>Apps</h2>
-
-            <h3>General</h3>
-            <ul>
-                <li><a href="https://www.opera.com/gx" target="_blank">Opera GX</a> for everyday tasks </li>
-                <li><a href="https://www.chromium.org/getting-involved/download-chromium/" target="_blank">Chromium</a>
-                    for everyday tasks </li>
-                <li><a href="https://bitwarden.com/" target="_blank">Bitwarden</a> for password management </li>
-                <li><a href="https://www.microsoft.com/en-us/microsoft-365/" target="_blank">Microsoft Office</a> for
-                    documents,
-                    presentations, etc. </li>
-            </ul>
-            <h3>Social</h3>
-            <ul>
-                <li><a href="https://discord.com/" target="_blank">Discord</a> for community involvement </li>
-                <li><a href="https://joinmastodon.org/" target="_blank">Mastodon</a> for social media </li>
-                <li><a href="https://youtube.com/" target="_blank">YouTube</a> for videos </li>
-            </ul>
-            <h3>Development</h3>
-            <ul>
-                <li><a href="https://github.com/alacritty/alacritty" target="_blank">Alacritty</a> for terminal </li>
-                <li><a href="https://www.google.com/intl/en_uk/chrome/dev/" target="_blank">Chrome Dev</a> for web
-                    development </li>
-                <li><a href="https://code.visualstudio.com/" target="_blank">VS Code</a> for general development </li>
-                <li><a href="https://micro-editor.github.io/" target="_blank">Micro</a> for comandline edits </li>
-                <li><a href="https://www.figma.com/" target="_blank">Figma</a> for designs, mockups, and logos </li>
-                <li><a href="https://www.docker.com/" target="_blank">Docker</a> for containers </li>
-                <li><a href="https://git-scm.com/" target="_blank">Git</a> for version control </li>
-            </ul>
-            <h3>Browser Extensions</h3>
-            <ul>
-                <li><a href="https://github.com/gorhill/uBlock/" target="_blank">uBlock</a> for ad and tracker blocking
-                </li>
-                <li><a href="https://bitwarden.com/download/" target="_blank">Bitwarden</a> for password management
-                </li>
-                <li><a href="https://github.com/openstyles/stylus" target="_blank">Stylus</a> for custom CSS styling &
-                    theming </li>
-                <li><a href="https://darkreader.org/" target="_blank">Dark Reader</a> for dark mode </li>
-                <li><a href="https://docs.clearurls.xyz/1.26.1/#download" target="_blank">ClearURL</a> for cleaning URLs
-                </li>
-                <li><a href="https://chrome.google.com/webstore/detail/sponsorblock-for-youtube/mnjggcdmjocbbbhaepdhchncahnbgone?hl=en"
-                        target="_blank">SponsorBlock</a> for skipping YouTube sponsors </li>
-            </ul>
-            <h2>Developer tooling</h2>
-
-            <h3>Terminal</h3>
-            <ul>
-                <li><a href="http://starship.rs/" target="_blank">Starship</a> for shell prompt </li>
-                <li><a href="https://the.exa.website/introduction" target="_blank">exa</a> for an ls replacement </li>
-                <li><a href="https://github.com/sharkdp/bat" target="_blank">bat</a> for a cat replacement </li>
-                <li><a href="https://github.com/ogham/dog" target="_blank">dog</a> for a command line DNS client </li>
-                <li><a href="https://github.com/sharkdp/fd" target="_blank">fd</a> for a find replacement </li>
-                <li><a href="https://github.com/ducaale/xh" target="_blank">xh</a> for a user-friendly HTTP client </li>
-            </ul>
-            <h3>Web Development</h3>
-            <ul>
-                <li><a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>for responsive CSS styling </li>
-                <li><a href="https://tailwindcss.com/" target="_blank">Tailwind CSS</a> for utility-based CSS styling
-                </li>
-            </ul>
-            <h3>Web Development</h3>
-            <ul>
-                <li><a href="https://github.com/" target="_blank">GitHub</a> for project source code hosting </li>
-                <li><a href="https://cloudflare.com/" target="_blank">Cloudflare</a> for DNS, static sites, serverless
-                    functions, etc.</li>
-                <li><a href="https://fly.io/" target="_blank">Fly</a> for occasional small free server hosting </li>
-            </ul>
+            <h2>Projects</h2>
+            <div id="projects" class="not-prose flex flex-col">
+                <div class="projects-grid">
+                    <a class="flex flex-col justify-between p-6 rounded-lg transition-all bg-surface hover:bg-surface-hover shadow-md shadow-surface/20 md:col-span-2"
+                        href="https://github.com/isabelroses/userstyles" target="_blank">
+                        <div class="flex flex-col gap-y-2">
+                            <h3 class="font-bold font-display text-xl">Userstyles</h3>
+                            <p class="text-fg-dimmed">A collection of all the user styles that I use</p>
+                        </div>
+                        <svg class="block w-4 h-4 mt-4 self-end" xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                    </a>
+                    <a class="flex flex-col justify-between p-6 rounded-lg transition-all bg-surface hover:bg-surface-hover shadow-md shadow-surface/20"
+                        href="https://github.com/catppuccin/youtube" target="_blank">
+                        <div class="flex flex-col gap-y-2">
+                            <h3 class="font-bold font-display text-xl">Catppuccin YouTube</h3>
+                            <p class="text-fg-dimmed">A smooth pastel theme for Yotube</p>
+                        </div>
+                        <svg class="block w-4 h-4 mt-4 self-end" xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                    </a>
+                    <a class="flex flex-col justify-between p-6 rounded-lg transition-all bg-surface hover:bg-surface-hover shadow-md shadow-surface/20"
+                        href="https://github.com/catppuccin/freshrss" target="_blank">
+                        <div class="flex flex-col gap-y-2">
+                            <h3 class="font-bold font-display text-xl">Catppuccin FreshRSS</h3>
+                            <p class="text-fg-dimmed">A smooth pastel theme for FreshRSS</p>
+                        </div>
+                        <svg class="block w-4 h-4 mt-4 self-end" xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                    </a>
+                    <a class="flex flex-col justify-between p-6 rounded-lg transition-all bg-surface hover:bg-surface-hover shadow-md shadow-surface/20"
+                        href="https://github.com/isabelroses/isabelroses.com" target="_blank">
+                        <div class="flex flex-col gap-y-2">
+                            <h3 class="font-bold font-display text-xl">isabelroses.com</h3>
+                            <p class="text-fg-dimmed">The source code for this website</p>
+                        </div>
+                        <svg class="block w-4 h-4 mt-4 self-end" xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                    </a>
+                    <a class="flex flex-col justify-between p-6 rounded-lg transition-all bg-surface hover:bg-surface-hover shadow-md shadow-surface/20"
+                        href="https://github.com/isabelroses/isabel.contact/" target="_blank">
+                        <div class="flex flex-col gap-y-2">
+                            <h3 class="font-bold font-display text-xl">isabel.contact</h3>
+                            <p class="text-fg-dimmed">The source code to my contacts websites</p>
+                        </div>
+                        <svg class="block w-4 h-4 mt-4 self-end" xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                    </a>
+                </div>
+            </div>
         </article>
     </main>
 
-    <script>
-        document.getElementById('theme-toggle').addEventListener('click', function () {
-            if (document.body.classList.contains('theme-ctp-mocha')) {
-                document.getElementById('theme-toggle-words').innerHTML = 'Catppuccin Macchiato';
-                document.body.classList.remove('theme-ctp-mocha');
-                document.body.classList.add('theme-ctp-macchiato');
-                localStorage.setItem('theme', 'theme-ctp-macchiato');
-            } else if (document.body.classList.contains('theme-ctp-macchiato')) {
-                document.getElementById('theme-toggle-words').innerHTML = 'Catppuccin Frappe';
-                document.body.classList.remove('theme-ctp-macchiato');
-                document.body.classList.add('theme-ctp-frappe');
-                localStorage.setItem('theme', 'theme-ctp-frappe');
-            } else if (document.body.classList.contains('theme-ctp-frappe')) {
-                document.getElementById('theme-toggle-words').innerHTML = 'Catppuccin Latte';
-                document.body.classList.remove('theme-ctp-frappe');
-                document.body.classList.add('theme-ctp-latte');
-                localStorage.setItem('theme', 'theme-ctp-latte');
-            } else if (document.body.classList.contains('theme-ctp-latte')) {
-                document.getElementById('theme-toggle-words').innerHTML = 'Catppuccin Mocha';
-                document.body.classList.remove('theme-ctp-latte');
-                document.body.classList.add('theme-ctp-mocha');
-                localStorage.setItem('theme', 'theme-ctp-mocha');
-            } else {
-                document.getElementById('theme-toggle-words').innerHTML = 'Catppuccin Macchiato';
-                document.body.classList.add('theme-ctp-macchiato');
-                localStorage.setItem('theme', 'theme-ctp-macchiato');
-            }
-        });
-        window.addEventListener("load", (event) => {
-            var theme = localStorage.getItem('theme');
-            if (theme != null) {
-                document.body.classList.add(theme);
-                if (theme == "theme-ctp-mocha") {
-                    document.getElementById('theme-toggle-words').innerHTML = 'Catppuccin Mocha';
-                } else if (theme == "theme-ctp-macchiato") {
-                    document.getElementById('theme-toggle-words').innerHTML = 'Catppuccin Macchiato';
-                } else if (theme == "theme-ctp-frappe") {
-                    document.getElementById('theme-toggle-words').innerHTML = 'Catppuccin Frappe';
-                } else {
-                    document.getElementById('theme-toggle-words').innerHTML = 'Catppuccin Latte';
-                }
-            }
-            if ("serviceWorker" in navigator) {
-                navigator.serviceWorker.register("sw.js");
-            }
-        });
-    </script>
+    <?php include 'includes/footer.php'; ?>
+
 </body>
 
 </html>

@@ -95,7 +95,7 @@
             <span class="font-display tracking-tight text-3xl font-black">Isabel</span></a>
         <div class="flex flex-col gap-y-2 md:flex-row md:items-center md:gap-x-4 md:gap-y-0">
             <a href="projects"
-                class="flex flex-row gap-x-3 items-center text-lg font-display md:px-3 py-1 rounded-sm font-semibold transition link text-accent">
+                class="flex flex-row gap-x-3 items-center text-lg font-display md:px-3 py-1 rounded-sm font-semibold transition link">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     class="block h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                     stroke-linejoin="round">
@@ -133,8 +133,13 @@
 
     <main class="flex flex-col w-full max-w-[80ch] mx-auto">
         <article class="prose enhanced-prose">
-            <h1>Projects</h1>
-            <p class="subtitle">This is a small collection of some of the projects I am working on</p>
+            <h1>Haiii, I'm Isabel</h1>
+            <p class="subtitle">I am a 6th form student with a passion for computer science</p>
+
+            <p>In my free time I work on <a href="https://github.com/catppuccin/youtube" target="_blank">Catppuccin
+                    YouTube</a>
+                and also <a href="https://github.com/catppuccin/freshrss" target="_blank">Catppuccin FreshRSS</a>.
+            </p>
 
             <h2>Projects</h2>
             <div id="projects" class="not-prose flex flex-col">
@@ -214,53 +219,7 @@
         </article>
     </main>
 
-    <script>
-        document.getElementById('theme-toggle').addEventListener('click', function () {
-            if (document.body.classList.contains('theme-ctp-mocha')) {
-                document.getElementById('theme-toggle-words').innerHTML = 'Catppuccin Macchiato';
-                document.body.classList.remove('theme-ctp-mocha');
-                document.body.classList.add('theme-ctp-macchiato');
-                localStorage.setItem('theme', 'theme-ctp-macchiato');
-            } else if (document.body.classList.contains('theme-ctp-macchiato')) {
-                document.getElementById('theme-toggle-words').innerHTML = 'Catppuccin Frappe';
-                document.body.classList.remove('theme-ctp-macchiato');
-                document.body.classList.add('theme-ctp-frappe');
-                localStorage.setItem('theme', 'theme-ctp-frappe');
-            } else if (document.body.classList.contains('theme-ctp-frappe')) {
-                document.getElementById('theme-toggle-words').innerHTML = 'Catppuccin Latte';
-                document.body.classList.remove('theme-ctp-frappe');
-                document.body.classList.add('theme-ctp-latte');
-                localStorage.setItem('theme', 'theme-ctp-latte');
-            } else if (document.body.classList.contains('theme-ctp-latte')) {
-                document.getElementById('theme-toggle-words').innerHTML = 'Catppuccin Mocha';
-                document.body.classList.remove('theme-ctp-latte');
-                document.body.classList.add('theme-ctp-mocha');
-                localStorage.setItem('theme', 'theme-ctp-mocha');
-            } else {
-                document.getElementById('theme-toggle-words').innerHTML = 'Catppuccin Macchiato';
-                document.body.classList.add('theme-ctp-macchiato');
-                localStorage.setItem('theme', 'theme-ctp-macchiato');
-            }
-        });
-        window.addEventListener("load", (event) => {
-            var theme = localStorage.getItem('theme');
-            if (theme != null) {
-                document.body.classList.add(theme);
-                if (theme == "theme-ctp-mocha") {
-                    document.getElementById('theme-toggle-words').innerHTML = 'Catppuccin Mocha';
-                } else if (theme == "theme-ctp-macchiato") {
-                    document.getElementById('theme-toggle-words').innerHTML = 'Catppuccin Macchiato';
-                } else if (theme == "theme-ctp-frappe") {
-                    document.getElementById('theme-toggle-words').innerHTML = 'Catppuccin Frappe';
-                } else {
-                    document.getElementById('theme-toggle-words').innerHTML = 'Catppuccin Latte';
-                }
-            }
-            if ("serviceWorker" in navigator) {
-                navigator.serviceWorker.register("sw.js");
-            }
-        });
-    </script>
+    <?php include 'includes/footer.php'; ?>
 </body>
 
 </html>
