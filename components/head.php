@@ -2,21 +2,21 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="dark only">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
     <meta name="description" content="contact">
     <meta property="og:site_name" content="isabel.contact">
     <meta property="og:title" content="Isabel's contact">
     <meta property="og:type" content="website">
-    <meta property="og:description" content="contact info">
+    <meta property="og:description" content="Isabel's amazing website">
     <meta property="og:image" content="https://isabel.contact/assets/og-image.png">
     <meta property="og:image:type" content="image/jpeg">
     <meta property="og:image:width" content="1280">
     <meta property="og:image:height" content="800">
-    <meta property="og:url" content="https://isabel.contact">
+    <meta property="og:url" content="https://isabelroses.com">
     <meta property="twitter:card" content="summary_large_image">
     <meta name="theme-color" content="#1e1e2e">
-    <link href="css/tailwind.css" rel="stylesheet" type="text/css" preload>
-    <link rel="manifest" href="manifest.json">
+    <link href="../css/tailwind.css" rel="stylesheet" type="text/css" preload>
+    <link rel="../manifest" href="manifest.json">
     <link rel="apple-touch-icon" href="assets/icons/apple-icon-180.png">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <link rel="apple-touch-startup-image" href="assets/icons/apple-splash-2048-2732.jpg" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
@@ -49,5 +49,4 @@
     <link rel="apple-touch-startup-image" href="assets/icons/apple-splash-1334-750.jpg" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
     <link rel="apple-touch-startup-image" href="assets/icons/apple-splash-640-1136.jpg" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
     <link rel="apple-touch-startup-image" href="assets/icons/apple-splash-1136-640.jpg" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
-    <link rel="preconnect" href="https://fonts.bunny.net">
 </head>
