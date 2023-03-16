@@ -94,7 +94,7 @@
                 style="background-image: none;">
             <span class="font-display tracking-tight text-3xl font-black">Isabel</span></a>
         <div class="flex flex-col gap-y-2 md:flex-row md:items-center md:gap-x-4 md:gap-y-0">
-            <a href="#projects"
+            <a href="projects"
                 class="flex flex-row gap-x-3 items-center text-lg font-display md:px-3 py-1 rounded-sm font-semibold transition link">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     class="block h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -236,11 +236,15 @@
                 document.body.classList.remove('theme-ctp-frappe');
                 document.body.classList.add('theme-ctp-latte');
                 localStorage.setItem('theme', 'theme-ctp-latte');
-            } else {
+            } else if (document.body.classList.contains('theme-ctp-latte')) {
                 document.getElementById('theme-toggle-words').innerHTML = 'Catppuccin Mocha';
                 document.body.classList.remove('theme-ctp-latte');
                 document.body.classList.add('theme-ctp-mocha');
                 localStorage.setItem('theme', 'theme-ctp-mocha');
+            } else {
+                document.getElementById('theme-toggle-words').innerHTML = 'Catppuccin Macchiato';
+                document.body.classList.add('theme-ctp-macchiato');
+                localStorage.setItem('theme', 'theme-ctp-macchiato');
             }
         });
         window.addEventListener("load", (event) => {
