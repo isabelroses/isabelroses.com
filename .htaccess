@@ -3,11 +3,6 @@
 Order allow,deny
 Deny from all
 </FilesMatch>
-#<DirectoryMatch "^\.">
-#Order allow,deny
-#Deny from all
-#</DirectoryMatch>
-
 
 #mod_rewrite starts here
 
