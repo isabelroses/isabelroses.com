@@ -4,7 +4,7 @@
 <?php include_once 'components/head.php'; ?>
 
 <head>
-<title>Projects</title>
+    <title>Projects</title>
 </head>
 
 <body>
@@ -18,7 +18,7 @@
             <h2>Projects</h2>
             <div id="projects" class="not-prose flex flex-col">
                 <div class="projects-grid">
-                    <a class="flex flex-col justify-between p-6 rounded-lg transition-all bg-surface hover:bg-surface-hover shadow-md shadow-surface/20 md:col-span-2" href="https://github.com/isabelroses/userstyles" target="_blank">
+                    <a class="flex flex-col justify-between p-6 rounded-lg transition-all bg-surface hover:bg-surface-hover shadow-md shadow-surface/20 md:col-span-2" href="userstyles" target="_blank">
                         <div class="flex flex-col gap-y-2">
                             <h3 class="font-bold font-display text-xl">Userstyles</h3>
                             <p class="text-fg-dimmed">A collection of all the user styles that I use</p>
