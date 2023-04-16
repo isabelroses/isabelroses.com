@@ -77,7 +77,7 @@
             </ul>
             <h3>Web Development</h3>
             <ul>
-                <li><a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>for responsive CSS styling </li>
+                <li><a href="https://getbootstrap.com/" target="_blank">Bootstrap</a> for responsive CSS styling </li>
                 <li><a href="https://tailwindcss.com/" target="_blank">Tailwind CSS</a> for utility-based CSS styling
                 </li>
             </ul>
