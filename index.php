@@ -17,7 +17,7 @@
 
             <p>
                 In my spare time I like to make websites, write code and play video games. I am also a maintainer/dev
-                for the <a href="https://gihub.com/catppuccin">Catppuccin</a> theme.
+                for the <a href="https://github.com/catppuccin/catppuccin">Catppuccin</a> theme.
             </p>
 
             <h2>Projects</h2>
