@@ -4,7 +4,7 @@
 <?php include_once 'components/head.php'; ?>
 
 <head>
-    <title>Document</title>
+    <title>userstyles</title>
 </head>
 
 <body>
@@ -22,4 +22,5 @@
     <?php include_once 'components/footer.php'; ?>
 
 </body>
+
 </html>
