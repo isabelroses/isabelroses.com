@@ -38,6 +38,8 @@ if (isset($repo)) {
         $time = $time_to->format("%h hours ago");
     } elseif ($time_to->format("%i") > 0) {
         $time = $time_to->format("%i minutes ago");
+    } else {
+        $time = "just now";
     }
 
     echo "<p>Latest commit: <a href='https://github.com/$repo'>$repo</a>, $time:
