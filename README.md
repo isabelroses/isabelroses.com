@@ -2,6 +2,6 @@
 
 This is the source code for my personal website, isabelroses.com. 
 
-### creddit
+### Credit
 
-see https://ryanccn.dev/
+inspiration drawn from https://ryanccn.dev/

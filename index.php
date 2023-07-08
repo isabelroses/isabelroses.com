@@ -13,15 +13,15 @@
     <main class="flex flex-col w-full max-w-[80ch] mx-auto">
         <article class="prose enhanced-prose">
             <h1>Haiii, I'm Isabel</h1>
-            <p class="subtitle">I am a 6th form student with a passion for computer science</p>
+            <p class="subtitle">I am a first year university student with a passion for computer science</p>
 
-            <p>
-                In my spare time I like to make websites, write code and play video games. I am also a maintainer/dev
-                for the <a href="https://github.com/catppuccin/catppuccin">Catppuccin</a> theme.
-            </p>
+            <h2 class="subtitle">Activity</h2>
+            <div id="activity" class="flex-col">
+                <?php include_once 'components/activity.php'; ?>
+            </div>
 
             <h2>Projects</h2>
-            <div id=" projects" class="not-prose flex flex-col">
+            <div id="projects" class="not-prose flex flex-col">
                 <div class="projects-grid">
                     <a class="flex flex-col justify-between p-6 rounded-lg transition-all bg-surface hover:bg-surface-hover shadow-md shadow-surface/20 md:col-span-2" href="userstyles">
                         <div class="flex flex-col gap-y-2">
