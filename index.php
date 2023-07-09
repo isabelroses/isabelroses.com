@@ -80,6 +80,11 @@
                     </a>
                 </div>
             </div>
+
+            <h2 class="subtitle">Blog</h2>
+            <div id="blog">
+                <?php include_once 'components/gallery.php'; ?>
+            </div>
         </article>
     </main>
 
